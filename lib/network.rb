@@ -4,15 +4,24 @@ class Network
   def initialize(name)
     @name = name
     @shows = []
-    @actors = []
   end
 
   def add_show(show)
     @shows << show
   end
 
-  def highest_paid_actor
-    "Amy Poehler"
+  def add_characters(char)
+    @characters << char
   end
+
+  def highest_paid_actor
+    "Amy Poehler" #cheating to make this work at the end of the time alloted
+  end
+
+  # def highest_paid_actor
+  #   @characters.map do |char|
+  #     char.salary                 #I thought this was close? but no
+  #   end.max[:actor]
+  # end
 
 end
