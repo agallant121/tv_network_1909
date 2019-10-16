@@ -27,9 +27,9 @@ class ShowTest < Minitest::Test
     assert_equal [@michael_knight, @kitt], @knight_rider.characters
   end
 
-  # def test_knight_rider_total_salary
-  #   assert_equal 1000000, @kitt.salary
-  #   assert_equal 1600000, @michael_knight.salary
-  #   assert_equal 2600000, @knight_rider.total_salary
-  # end
+  def test_knight_rider_total_salary
+    assert_equal 1000000, @kitt.salary
+    assert_equal 1600000, @michael_knight.salary
+    assert_equal 2600000, @knight_rider.total_salary
+  end
 end

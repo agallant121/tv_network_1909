@@ -7,8 +7,10 @@ class Show
     @characters = characters
   end
 
-  # def total_salary
-  # @characters.each do |salary|
-  #
-  # end
+  def total_salary
+    @characters.map do |char|
+    # require "pry"; binding.pry
+      char.salary
+    end.sum
+  end
 end
